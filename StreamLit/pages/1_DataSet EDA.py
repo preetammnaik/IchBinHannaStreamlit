@@ -126,7 +126,7 @@ fig = px.pie(df_selectiona,
              values=category_valuesad,
              names=category_labelsad,
              title=" Percentage of tweets by user groups ",
-
+             color_discrete_sequence=px.colors.sequential.Viridis
              )
 st.plotly_chart(fig)
 
