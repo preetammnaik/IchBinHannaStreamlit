@@ -196,7 +196,7 @@ def generate_word_cloud_for_category(df, category, wordcloud_category, _wordclou
         axes[i].axis("off")
         axes[i].plot()
         extent = axes[i].get_window_extent().transformed(fig.dpi_scale_trans.inverted())
-        fig.savefig("saved_images/wc_" + category[i] + '.png', bbox_inches=extent, transparent=True)
+        #fig.savefig("saved_images/wc_" + category[i] + '.png', bbox_inches=extent, transparent=True)
 
     st.pyplot(fig)
     # plt.savefig("Wordcloud.png", bbox_inches='tight')
